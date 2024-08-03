@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.dialog-box-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.dialog-box {
+    background: rgb(41, 42, 44);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 600px;
+    height: 450px;
+    overflow-y: auto;
+    position: relative;
+  }
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.dialog-box-content {
+    margin-top: 20px;
+    color: white;
+}
+
+.dialog-box-content h1 {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #fff;
+}
+
+.dialog-box-book-content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.dialog-box-book-image-container {
+    background-color: white;
+    margin-top: 20px;
+    height: 285px;
+    width: 200px;
+}
+  
+.book-cover {
+    width: 100px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.book-details {
+    flex-grow: 0.5;
+}
+
+.book-detail {
+    margin-bottom: 10px;
+}
+
+.detail-title {
+    color: white;
+    display: block;
+    font-weight: bold;
+}
+
+.detail-content {
+    color: rgb(180, 175, 175);
+    border: 1px solid gray;
+    display: inline-block;
+    width: 350px;
+    padding: 5px;
+    margin-top: 3px;
+}
+
+.dialog-box-buttons {
+    display: flex;
+    justify-content: left;
+}
+
+.download-button, .wishlist-button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-button {
+    background-color: #6a5acd;
+}
+
+.wishlist-button {
+    background-color: #555;
+    margin-left: 10px;
+}
